@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200&display=swap');
+
+@font-face {
+  font-family: Sughoiy;
+  src: url(../Sughoiy.ttf);
+}
+
+body {
+  font-family: Sughoiy;
+  background-image: linear-gradient(to top, #c6b3fd7e, #8058ef7e, #592FD27e, #160C407e, #00000000), url(../img/night.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.typing-demo {
+  width: 14.5ch;
+  animation: typing 2s steps(10), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 1px solid;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+.logo {
+  border-radius: 37% 63% 72% 28% / 66% 69% 31% 34%;
+}
+
+.soc{
+  background: linear-gradient(-45deg, rgb(50 66 75 / 0.5), rgb(13 30 37 / 0.5), rgb(50 66 75 / 0.5));
+  background-size: 400% 400%;
+  animation: social 5s ease infinite;
+}
+@keyframes social {
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}
+.left{
+  border-left: 2px solid white;
+}
+.item1{
+  position: absolute;
+  z-index: 100;
+  left: 150px;
+}
+.item2{
+  position: absolute;
+  z-index: 100;
+  right: 150px;
+}
